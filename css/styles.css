@@ -1,42 +1,67 @@
+/* General styling */
 body {
-    background-color: #f9f7fe;
-    font-family: sans-serif;
+    background-color: #f3effd;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
   }
   
   h1 {
     text-align: center;
-    font-family: sans-serif;
-    font-size: 36px;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #5a3eca;
+    margin-bottom: 20px;
   }
   
   h2 {
-    margin: 0 0 5px;
-    font-size: 28px;
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #5a3eca;
   }
   
   select {
     display: block;
     width: 100%;
-    font-size: 18px;
-    border-radius: 4px;
-    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #d0c4f7;
+    background-color: #faf8ff;
+    color: #5a3eca;
+    transition: all 0.3s ease;
   }
   
+  select:hover {
+    border-color: #b3a3f3;
+    background-color: #efe7ff;
+  }
+  
+  /* Container styling */
   .container {
     max-width: 600px;
     margin: 60px auto;
-    background: white;
-    padding: 30px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 10px;
+    background: #ffffff;
+    padding: 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 7px 29px 0px;
+    border-radius: 12px;
+    text-align: center;
   }
   
+  /* City styling */
   .city {
     display: flex;
-    margin: 10px 0;
-    justify-content: space-between;
-    padding: 30px 0;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    margin: 15px 0;
+    padding: 20px 0;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+  }
+  
+  .city h2 {
+    margin-bottom: 8px;
+    font-size: 1.6em;
   }
   
   .city:last-child {
@@ -45,21 +70,42 @@ body {
   
   .date {
     opacity: 0.7;
+    font-size: 1em;
+    color: #555;
+    margin-top: 5px;
   }
   
+  /* Time styling */
   .time {
-    font-size: 48px;
+    font-size: 3em;
     font-weight: bold;
+    color: #3a2e8c;
+    margin-top: 5px;
   }
   
   .time small {
-    font-size: 24px;
+    font-size: 0.5em;
     vertical-align: middle;
-    line-height: 48px;
+    line-height: 1;
+    color: #6e60b3;
   }
   
+  /* Footer styling */
   footer {
     text-align: center;
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1em;
+    color: #555;
+    margin-top: 40px;
   }
+  
+  footer a {
+    color: #5a3eca;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #3a2e8c;
+  }
+  

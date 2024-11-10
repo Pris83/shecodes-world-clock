@@ -24,6 +24,18 @@ function updateTime() {
         "h:mm:ss [<small>]A[</small>]"
       );
     }
+
+    //reloads
+    const citiesElement = document.querySelector("#cities");
+    document.querySelector("#city").addEventListener("change", function (event) {
+        const selectedCity = event.target.value;
+      
+        if (selectedCity === "select") {
+          // Display a placeholder message when "Select a city" is clicked
+          citiesElement.innerHTML = `<p>Please select a city to view its time.</p>`;
+        }
+      });
+      
   }
   
   function updateCity(event) {
@@ -44,8 +56,9 @@ function updateTime() {
       "A"
     )}</small></div>
     </div>
-    `;
-  }
+  <a href="/">All cities</a>
+  `;
+}
   
   updateTime();
   setInterval(updateTime, 1000);
